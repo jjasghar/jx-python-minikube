@@ -13,7 +13,7 @@ class MyHandler(BaseHTTPRequestHandler):
     self.end_headers()
     with open('logo.png', 'rb') as f:
       self.wfile.write(f.read())
-
+# a comment
 try:
   server = HTTPServer(('', PORT_NUMBER), MyHandler)
   print('Started httpserver on port', PORT_NUMBER)
